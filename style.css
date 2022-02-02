@@ -1,0 +1,230 @@
+/*Default the styles*/
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box; 
+}
+  
+/*
+    BRS - Padding or Margin to be 40px
+    set veiw port to be 100% on screen
+*/
+body 
+{
+    margin: 0px;
+    height: 100vh;
+    padding: 40px;
+    background-color: #e9eeef;
+}
+
+/*
+    BRS - Default the div height to full screen size
+    set div to relative as children div placed within
+*/
+#main-div
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+}
+
+/*
+    BRS - Sizing W|H 80px
+    position absolute
+    Top Left postion 
+*/
+#topLeft
+{
+    width: 80px;
+    height: 80px;
+    background-color: #2aaed7; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*
+    BRS - Sizing W|H 80px
+    position absolute
+    Top Right postion 
+*/
+#topRight
+{
+    width: 80px;
+    height: 80px; 
+    background-color: #39657e; 
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+/*
+    BRS - Sizing W|H 80px
+    position absolute
+    Bottom Left postion 
+*/
+#bottomLeft
+{
+    width: 80px;
+    height: 80px; 
+    background-color: #39657e; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+/*
+    BRS - Sizing W|H 80px
+    position absolute
+    Bottom Right postion 
+*/
+#bottomRight
+{
+    width: 80px;
+    height: 80px; 
+    background-color: #2aaed7; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*
+    BRS - Sizing W|H 80px
+    position absolute
+    Position div by top left corner of the square
+*/
+#centerTop
+{
+    width: 80px;
+    height: 80px; 
+    background-color: #e9eeef; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/*
+    BRS - Sizing W|H 80px
+    position absolute
+    Position div by bottom right corner of the square
+*/
+#centerBottom
+{
+    width: 80px;
+    height: 80px; 
+    background-color: #e9eeef;    
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+}
+
+/*
+    BRS - Sizing W|H 80px
+    Position absolute
+    Position div dead center using transfrom to get the center of the square
+*/
+#center
+{
+    width: 80px;
+    height: 80px; 
+    background-color: #fb9d2f; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+/*
+    When screen gets to the screen of common mobi landscape view change the background colors 
+*/
+@media (max-width: 900px) 
+{
+    #topLeft
+    {
+        background-color: #78daf8; 
+    }
+
+    #topRight
+    {
+        background-color: #a0f78e; 
+    }
+
+    #bottomLeft
+    {
+        background-color: #a0f78e; 
+    }
+
+    #bottomRight
+    {
+        background-color: #78daf8; 
+    }
+
+    #centerTop
+    {
+        background-color: #015869; 
+    }
+
+    #centerBottom
+    {
+        background-color: #015869;    
+    }
+
+    #center
+    {
+        background-color: #80e3fc; 
+    }
+}
+
+/*
+    When screen gets to the screen of common mobi portrait view change the background colors 
+*/
+@media (max-width: 600px) 
+{
+    #topLeft
+    {
+        background-color: #05c5ff; 
+    }
+
+    #topRight
+    {
+        background-color: #2efd05; 
+    }
+
+    #bottomLeft
+    {
+        background-color: #2efd05; 
+    }
+
+    #bottomRight
+    {
+        background-color: #05c5ff; 
+    }
+
+    #centerTop
+    {
+        background-color: #c7e5eb; 
+    }
+
+    #centerBottom
+    {
+        background-color: #c7e5eb;    
+    }
+
+    #center
+    {
+        background-color: #e27900; 
+    }
+}
+
+
+  
+
+
+
+
+
+
+
